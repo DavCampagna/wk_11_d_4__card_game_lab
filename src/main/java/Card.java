@@ -20,4 +20,13 @@ public class Card {
         return this.rank.getValue();
     }
 
+    public int getValuesFromSuitEnum() {
+        SuitType[] suits = SuitType.values();
+        return suits.length;
+    }
+
+    public int getValuesFromRankEnum() {
+        RankType[] ranks = RankType.values();
+        return ranks.length;
+    }
 }

@@ -27,4 +27,14 @@ public class CardTest {
         card = new Card(SuitType.HEARTS, RankType.QUEEN);
         assertEquals(10, card.getValueFromEnum());
     }
+
+    @Test
+    public void canGetValuesFromSuitEnum() {
+        assertEquals(4, card.getValuesFromSuitEnum());
+    }
+
+    @Test
+    public void canGetValuesFromRankEnum() {
+        assertEquals(13, card.getValuesFromRankEnum());
+    }
 }
